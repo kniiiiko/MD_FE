@@ -9,6 +9,7 @@ const Hospital = () => {
   const goHome = () => navigate(`/home`);
   const goAppoint = () => navigate(`/appointment`);
   const goMy = () => navigate(`/my`);
+  const goDetail = () => navigate(`/appointment/hospital/check`);
 
   return (
     <H.Container>
@@ -34,12 +35,14 @@ const Hospital = () => {
             </H.C_inform>
           </H.C_wrapper>
           <H.Divider />
-          <H.C_btn id="btn">예약하기</H.C_btn>
+          <H.C_btn id="btn" onClick={goDetail}>
+            예약하기
+          </H.C_btn>
         </H.Component>
 
         <H.Component>
-          <H.C_title>경북대학교병원</H.C_title>
-          <H.C_sub>정형외과</H.C_sub>
+          <H.C_title>안동병원</H.C_title>
+          <H.C_sub>재활의학과</H.C_sub>
           <H.C_wrapper>
             <H.C_inform>
               <img id="clock" src={`${process.env.PUBLIC_URL}/images/clock.svg`} alt="back" />
@@ -48,6 +51,23 @@ const Hospital = () => {
             <H.C_inform>
               <img id="clock" src={`${process.env.PUBLIC_URL}/images/Calendar.svg`} alt="back" />
               10:00 - 12:00 AM
+            </H.C_inform>
+          </H.C_wrapper>
+          <H.Divider />
+          <H.C_btn id="btn">예약하기</H.C_btn>
+        </H.Component>
+
+        <H.Component>
+          <H.C_title>의성군보건소</H.C_title>
+          <H.C_sub>가정의학과</H.C_sub>
+          <H.C_wrapper>
+            <H.C_inform>
+              <img id="clock" src={`${process.env.PUBLIC_URL}/images/clock.svg`} alt="back" />
+              9월 27일
+            </H.C_inform>
+            <H.C_inform>
+              <img id="clock" src={`${process.env.PUBLIC_URL}/images/Calendar.svg`} alt="back" />
+              9:00 - 12:00 AM
             </H.C_inform>
           </H.C_wrapper>
           <H.Divider />

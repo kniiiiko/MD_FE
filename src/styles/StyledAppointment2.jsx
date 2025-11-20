@@ -16,8 +16,6 @@ export const Container = styled.div`
   overflow: visible;
   align-items: center;
   background: #eef2f7;
-  overflow: hidden;
-  align-items: center;
 `;
 
 export const Header = styled.div`
@@ -57,8 +55,8 @@ export const Content = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   padding: 20px;
   flex: 1;
 
@@ -76,74 +74,70 @@ export const Content = styled.div`
 
 export const Component = styled.div`
   display: flex;
-  width: 300px;
-  padding: 24px;
+  width: 283px;
+  padding: 35px 20px;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 75px 0;
   gap: 10px;
-  margin: 40px 0;
   border-radius: 20px;
   background: #fff;
   box-shadow: 5.039px 30.233px 50.388px 0 rgba(90, 117, 167, 0.04);
-
-  #discription {
-    align-self: stretch;
-    color: #8696bb;
-    font-family: "Gmarket Sans TTF";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
 `;
 
 export const C_title = styled.div`
   color: #000;
   font-family: "Gmarket Sans TTF";
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-`;
 
-export const C_sub = styled.div`
-  color: #8696bb;
-  font-family: "Gmarket Sans TTF";
-  font-size: 45px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-`;
-
-export const C_wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  #sub {
+    color: #8696bb;
+    font-family: "Gmarket Sans TTF";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 `;
 
 export const C_btn = styled.div`
   display: flex;
-  padding: 8px;
+  width: 283px;
+  height: 64px;
+  padding: 15px 74px;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
+  gap: 10px;
   border-radius: 10px;
   background: rgba(99, 180, 255, 0.1);
 
-    color: #4894fe;
-    font-family: "Gmarket Sans TTF";
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 110%; /* 16.5px */
-  }
+  color: #4894fe;
+  font-family: "Gmarket Sans TTF";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 24.2px */
+`;
 
-  #title {
-    color: #000;
-    font-family: "Gmarket Sans TTF";
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+export const Info_wrapper = styled.div``;
+
+export const Info = styled.div`
+  color: #000;
+  font-family: "Gmarket Sans TTF";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+`;
+
+export const Divider = styled.div`
+  width: 100%;
+  height: 2px;
+  background: #f5f5f5;
 `;
 
 export const Nav = styled.div`
